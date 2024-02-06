@@ -1,4 +1,5 @@
 # Date: 2/6/2024
+# Basic Solution (Runtime: 65ms)
 
 class Solution:
     def mergeAlternately(self, word1: str, word2: str) -> str:
@@ -15,3 +16,20 @@ class Solution:
             for k in range(len(word1)):
                 newWord = newWord + word1[k] + word2[k]
             return newWord
+
+
+# Efficient Solution (Runtime: 32ms)
+
+class Solution:
+    def mergeAlternately(self, word1: str, word2: str) -> str:
+        i = 0
+        j = 0 
+        res = []
+        while i < len(word1) and j < len(word2):
+            res.append(word1[i])
+            res.append(word2[j])
+            i = i + 1
+            j = j + 1
+        res.append(word1[i:])
+        res.append(word2[j:])
+        return "".join(res)
