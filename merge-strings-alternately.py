@@ -1,4 +1,5 @@
 # Date: 2/6/2024
+# Problem: Merge Strings ALternately (Easy)
 # Basic Solution (Runtime: 65ms)
 
 class Solution:
@@ -18,7 +19,8 @@ class Solution:
             return newWord
 
 
-# Efficient Solution (Runtime: 32ms)
+# Efficient Solution
+# Runtime: 29ms (Beats 93% of Leetcode users)
 
 class Solution:
     def mergeAlternately(self, word1: str, word2: str) -> str:
