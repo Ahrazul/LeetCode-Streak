@@ -1,6 +1,6 @@
 # Date completed: 2/9/2024
-# Problem name: Kids with greatest number of candies 
-# Runtime- 32ms
+# Problem name: Kids with greatest number of candies (Easy)
+# Runtime: 32ms (Beats 93% of Leetcode users)
 
 class Solution:
     def kidsWithCandies(self, candies: List[int], extraCandies: int) -> List[bool]:
