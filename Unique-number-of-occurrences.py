@@ -1,4 +1,4 @@
-# Problem: Unique number of occurences
+# Problem: Unique number of occurrences
 # Difficulty: Medium
 # Runtime: 4 ms (Beats 94% of LeetCode users)
 
