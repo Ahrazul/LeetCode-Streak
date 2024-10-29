@@ -4,7 +4,15 @@
 
 class Solution:
     def equalPairs(self, grid: List[List[int]]) -> int:
-        transposed = [[grid[j][i] for j in range(len(grid))] for i in range(len(grid))]
+        
+        transposed = []
+
+        for i in range(len(grid)):
+            transposed.append([0] * len(grid))
+
+        for i in range(len(grid)):
+            for j in range(len(grid)):
+                transposed[j][i] = grid[i][j]
 
         d1 = {}
 
